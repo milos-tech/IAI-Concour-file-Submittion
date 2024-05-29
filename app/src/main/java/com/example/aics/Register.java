@@ -6,12 +6,15 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Register extends AppCompatActivity {
+
+    ActivityResultLauncher<Intent> resultLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,5 +35,8 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    private void registerResults(){
+        resultLauncher
     }
 }

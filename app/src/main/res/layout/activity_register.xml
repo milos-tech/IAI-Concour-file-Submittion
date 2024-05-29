@@ -75,7 +75,7 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/number"
+        android:layout_below="@+id/imageView2"
         android:padding="15dp"
         android:layout_marginTop="100dp"
         android:text="Submit"
@@ -85,7 +85,24 @@
         android:textSize="20dp"
         android:textStyle="bold"/>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="13dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
+    <TextView
+        android:id="@+id/textViewimg"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/number"
+        android:layout_width="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Scanned images of your documents" />
 
 
 </RelativeLayout>
