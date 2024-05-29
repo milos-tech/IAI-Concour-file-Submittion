@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".success"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="154dp"
+        android:layout_height="111dp"
+        android:src="@drawable/school"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/congrats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Congratulations!"
+        android:textColor="#BBDE1D"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/norm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You have successfully registered for the AICS entrance exam"
+        android:textColor="#BBDE1D"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/congrats"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You will recieve notifications if there are updates"
+        android:textColor="#BBDE1D"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/norm"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

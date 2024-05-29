@@ -28,7 +28,7 @@ public class Register extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(Register.this, fileUpload.class);
+                Intent intent = new Intent(Register.this, success.class);
                 startActivity(intent);
             }
         });
