@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/white"
+    android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
@@ -27,8 +27,10 @@
         android:gravity="center"
         android:text="For the AICS entrance exam"
         android:textColor="#BBDE1D"
+
         android:textSize="25dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"/>
 
     <EditText
         android:id="@+id/name"
@@ -36,8 +38,12 @@
         android:layout_width="match_parent"
         android:layout_below="@+id/register2"
         android:hint="Name"
+        android:background="@drawable/edittext_border"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:layout_marginTop="40dp"
-        android:layout_margin="30dp"/>
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
 
     <EditText
         android:id="@+id/email"
@@ -45,25 +51,41 @@
         android:layout_width="match_parent"
         android:layout_below="@+id/name"
         android:hint="E-mail"
-        android:layout_margin="30dp"/>
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittext_border"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
 
     <EditText
-        android:id="@+id/name"
-        android:layout_height="wrap_content"
+        android:id="@+id/number"
         android:layout_width="match_parent"
-        android:layout_below="@+id/register2"
-        android:hint="Name"
-        android:layout_marginTop="40dp"
-        android:layout_margin="30dp"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_margin="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_border"
+        android:hint="Phone Number"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:textColor="@color/white"/>
 
-    <EditText
-        android:id="@+id/name"
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/register2"
-        android:hint="Name"
-        android:layout_marginTop="40dp"
-        android:layout_margin="30dp"/>
+        android:layout_below="@+id/number"
+        android:padding="15dp"
+        android:layout_marginTop="100dp"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="#BBDE1D"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
 
 
 </RelativeLayout>
